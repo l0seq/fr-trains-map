@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/index.scss">
+</head>
+
+<body>
+    <div id="tooltip">
+        <button id="close_tooltip">Fermer</button>
+        <h2>Carte des trains français</h2>
+        <p>Crée par <a href="https://loseq.fr">Loseq</a></p>
+        <a class="donate-btn" href="https://buymeacoffee.com/loseq" target="_blank"><img src="/coffee.png" alt=""></a>
+        <a href="https://github.com/l0seq/fr-trains-map" target="_blank">
+            <img src="https://img.shields.io/badge/Code_Source-Github-blue" alt="">
+        </a>
+        <a href="http://www.gnu.org/licenses/agpl-3.0" target="_blank"> 
+            <img src="https://img.shields.io/badge/License-AGPL%20v3-blue.svg" alt="">
+        </a>
+    </div>
+    <div id="map"></div>
+    <div id="popup_bg">
+        <div id="popup">
+            <div>
+                <h2>Carte des lignes de trains françaises</h2>
+                <p>Vous pouvez choisir d'afficher ou non certaines couches de la carte avec le bouton en haut à droite de l'écran</p>
+                <p>Bonne navigation, et n'hésitez pas à ouvrir une <a href="https://github.com/l0seq/fr-trains-map/issues">issue</a> sur github pour suggérer des nouveautés</p>
+                <button id="close_popup">Fermer</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./ts/index.ts"></script>
+</body>
+
+</html>

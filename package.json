@@ -1,0 +1,24 @@
+{
+  "name": "fr-trains-map-front",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "sass": "^1.77.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/leaflet": "^1.9.12",
+    "@types/leaflet.markercluster": "^1.5.4",
+    "alpinejs": "^3.13.10",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
+    "vite": "^5.2.11"
+  },
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build"
+  }
+}
