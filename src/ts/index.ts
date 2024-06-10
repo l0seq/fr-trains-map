@@ -3,6 +3,13 @@ import "leaflet.markercluster";
 import "leaflet.markercluster/dist/MarkerCluster.css"
 import "leaflet.markercluster/dist/MarkerCluster.Default.css"
 import "leaflet/dist/leaflet.css";
+// @ts-ignore
+import markerIconUrl from "leaflet/dist/images/marker-icon.png";
+// @ts-ignore
+import markerIconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
+// @ts-ignore
+import markerShadowUrl from "leaflet/dist/images/marker-shadow.png";
+
 const dataUrl = "https://trains-data.loseq.fr/";
 
 const tooltip = document.getElementById("tooltip")
@@ -56,6 +63,11 @@ document.getElementById("close_popup")?.addEventListener("click", () => {
         layers: [osmLayer, intercitesLayer, L.markerClusterGroup().addLayer(terLayer)]
     });
 
+
+    L.Icon.Default.prototype.options.iconUrl = markerIconUrl;
+    L.Icon.Default.prototype.options.iconRetinaUrl = markerIconRetinaUrl;
+    L.Icon.Default.prototype.options.shadowUrl = markerShadowUrl;
+    L.Icon.Default.imagePath = "";
     const layerControl = L.control.layers({
         "OSM": osmLayer
     }, {
