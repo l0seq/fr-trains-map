@@ -15,7 +15,8 @@
     "alpinejs": "^3.13.10",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "vite-plugin-radar": "^0.9.6"
   },
   "scripts": {
     "dev": "bunx --bun vite",
